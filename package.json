@@ -10,7 +10,9 @@
     "build:prod": "npm run clean:dist && npm run test && webpack --env=prod --progress --profile --colors --display-error-details --display-cached",
     "start": "webpack-dev-server --env=dev --progress --profile --colors",
     "test": "karma start --no-auto-watch --single-run",
-    "test:watch": "karma start --auto-watch --no-single-run"
+    "test:watch": "karma start --auto-watch --no-single-run",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -45,7 +47,8 @@
     "reactstrap": "^7.0.2",
     "slp-sdk": "^4.7.0",
     "styled-components": "^5.0.1",
-    "websocket": "^1.0.29"
+    "websocket": "^1.0.29",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/jasmine": "~2.5.46",
@@ -79,5 +82,6 @@
     "webpack": "~2.2.1",
     "webpack-dev-server": "~2.4.2",
     "webpack-merge": "~4.1.0"
-  }
+  },
+  "snyk": true
 }
