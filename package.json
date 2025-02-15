@@ -43,7 +43,7 @@
     "react-spinners": "^0.5.12",
     "react-tooltip": "^3.10.0",
     "reactstrap": "^7.0.2",
-    "slp-sdk": "^4.7.0",
+    "slp-sdk": "^4.9.1",
     "styled-components": "^5.0.1",
     "websocket": "^1.0.29"
   },
@@ -76,7 +76,7 @@
     "tslint-loader": "~3.4.3",
     "typescript": "~2.2.1",
     "url-loader": "~0.5.8",
-    "webpack": "~2.2.1",
+    "webpack": "~5.0.0",
     "webpack-dev-server": "~2.4.2",
     "webpack-merge": "~4.1.0"
   }
